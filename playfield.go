@@ -20,39 +20,25 @@ func contains(s []int, e int) bool {
     return false
 }
 
-func main() {
-	z := Load_Planet()
-	//fmt.Println(z)
-	//myrand := random(0, 9)
-	//fmt.Println(z[myrand])
-  var sel_planets [7]Card
+func PlayPlanets() []Card{
+	z := LoadPlanet()
+  var sel_planets []Card
   var atlas []int
   aynrand := 99999999
-  for uu, _ := range sel_planets{
+  for uu := 0; uu <= 6; uu++ {
+		fmt.Println(uu)
     Random:
     for {
       aynrand = random(0, len(z)-1, time.Now().UnixNano()/int64(len(z)))
       if !contains(atlas, aynrand) {
+				sel_planets = append(sel_planets, z[aynrand])
         atlas = append(atlas, aynrand)
-//        fmt.Println(atlas, aynrand, len(z))
         break Random
       } else {
         continue Random
       }
     }
-    if uu < 5 {
-    z[aynrand].Faceup = true
-    } else {
-    z[aynrand].Faceup = false
-      }
-    sel_planets[uu] = z[aynrand]
-
   }
-  //fmt.Println(sel_planets)
-	//var play Playfield
-	b := &Playfield{	}
-	for _, planet  := range sel_planets {
-		b.Planets = append(b.Planets, planet)
-	}
-	fmt.Println(b)
+	fmt.Println(sel_planets)
+  return(sel_planets)
 }

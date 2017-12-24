@@ -8,7 +8,7 @@ import (
   "log"
 )
 
-func Load_Planet() []Card{
+func LoadPlanet() []Card{
   dir := "./cards/Core/"
   files, err := ioutil.ReadDir(dir)
   if err != nil {
