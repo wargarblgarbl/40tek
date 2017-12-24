@@ -1,0 +1,11 @@
+{
+  "Name": "Iridial",
+  "Type": ["Planet"],
+  "Planettype": ["Material", "Tech", "Strongpoint"],
+  "Draw": 1,
+  "Resource": 0,
+  "Action": {
+    "Action": ["{set}{damage}0"],
+    "Target": ["{unit}"]
+  }
+}

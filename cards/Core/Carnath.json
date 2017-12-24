@@ -1,0 +1,11 @@
+{
+  "Name": "Carnath",
+  "Type": ["Planet"],
+  "Planettype": ["Material", "Tech"],
+  "Draw": 1,
+  "Resource": 1,
+  "Action": {
+    "Text":
+      "Deal 1 damage to each enemy unit at a target HQ or adjacent planet. "
+  }
+}

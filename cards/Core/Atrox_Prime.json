@@ -1,0 +1,11 @@
+{
+  "Name": "Atrox Prime",
+  "Type": ["Planet"],
+  "Planettype": ["Material", "Tech"],
+  "Draw": 1,
+  "Resource": 1,
+  "Action": {
+    "Action": ["{1d}{all_units}"],
+    "Target": ["{hq}||{adj_planets}"]
+  }
+}

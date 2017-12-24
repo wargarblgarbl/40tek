@@ -1,0 +1,11 @@
+{
+  "Name": "Tarrus",
+  "Type": ["Planet"],
+  "Planettype": ["Material", "Strongpoint"],
+  "Draw": 1,
+  "Resource": 1,
+  "Action": {
+    "Text":
+      "If you control fewer units than your opponent, gain 3[RESOURCE] or draw 3 cards."
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "Name": "Osus IV",
+  "Type": ["Planet"],
+  "Planettype": ["Strongpoint"],
+  "Draw": 0,
+  "Resource": 2,
+  "Action": {
+    "Text": "Remove all damage from a target unit."
+  }
+}

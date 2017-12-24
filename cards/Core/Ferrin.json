@@ -1,0 +1,10 @@
+{
+  "Name": "Elouith",
+  "Type": ["Planet"],
+  "Planettype": ["Material"],
+  "Draw": 0,
+  "Resource": 2,
+  "Action": {
+    "Text": "Rout a target non-warlord unit."
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "Name": "Elouith",
+  "Type": ["Planet"],
+  "Planettype": ["Tech"],
+  "Draw": 2,
+  "Resource": 0,
+  "Action": {
+    "Action": [
+      "{select_from}{deck}{3cards}{top}{take}{1}{shuffle}{remainder}{replace}{remainder}"
+    ],
+    "Target": ["{yourself}"]
+  }
+}

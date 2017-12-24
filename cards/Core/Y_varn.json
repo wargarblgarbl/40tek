@@ -1,0 +1,10 @@
+{
+  "Name": "Y’varn",
+  "Type": ["Planet"],
+  "Planettype": ["Material", "Tech", "Strongpoint"],
+  "Draw": 0,
+  "Resource": 1,
+  "Action": {
+    "Text": "Each player puts a unit into play from his hand at his HQ. "
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "Name": "Barlus",
+  "Type": ["Planet"],
+  "Planettype": ["Strongpoint"],
+  "Draw": 2,
+  "Resource": 0,
+  "Action": {
+    "Action": ["{1c}{discard}{rand}"],
+    "Target": ["{opponent}"]
+  }
+}

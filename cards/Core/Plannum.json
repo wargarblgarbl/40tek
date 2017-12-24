@@ -1,0 +1,10 @@
+{
+  "Name": "Plannum",
+  "Type": ["Planet"],
+  "Planettype": ["Tech", "Strongpoint"],
+  "Draw": 1,
+  "Resource": 1,
+  "Action": {
+    "Text": "Move a non-warlord unit you control to a planet of your choice."
+  }
+}
