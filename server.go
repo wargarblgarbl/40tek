@@ -7,11 +7,21 @@ import (
 )
 
 func main() {
-	http.HandleFunc("/", mainHandler)
+	game := newGame()
+	//http.HandleFunc("/", mainHandler(newGame()))
+	http.HandleFunc("/", func(w http.ResponseWriter, r *http.Request) {
+		mainHandler(w, r, game)
+	})
 	//  what := PlayPlanets()
 	http.ListenAndServe(":8080", nil)
 
 }
+
+/*
+func handler(w http.ResponseWriter, r *http.Request, mystr string) {
+       println(mystr);
+}
+*/
 
 func PlayInit(output chan *Playfield) {
 	var players []Player
@@ -34,13 +44,17 @@ func PlayInit(output chan *Playfield) {
 
 }
 
-func mainHandler(w http.ResponseWriter, r *http.Request) {
+func newGame() (b *Playfield) {
 	var playchan = make(chan *Playfield)
 	go PlayInit(playchan)
-	b := <-playchan
+	b = <-playchan
 	//b is our actual playfield. Let's obfuscate it.
 	PlanetObfuscator(b)
 	SetPlanetInitPos(b)
+	return b
+}
+
+func mainHandler(w http.ResponseWriter, r *http.Request, b *Playfield) {
 	a, err := json.Marshal(b)
 	if err != nil {
 		fmt.Println(err)
