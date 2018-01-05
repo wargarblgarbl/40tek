@@ -11,3 +11,10 @@ func PlanetObfuscator(b *Playfield) (obfed *Playfield) {
 	return b
 
 }
+
+func SetPlanetInitPos(b *Playfield) (pos *Playfield) {
+	for y, _ := range b.Planets {
+		b.Planets[y].SetPos(y)
+	}
+	return b
+}

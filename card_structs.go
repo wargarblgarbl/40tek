@@ -15,6 +15,7 @@ type Card struct {
 	Loyalty      bool
 	Name         string
 	Power        int
+	Buff 				 int
 	Planettype   []string
 	Resource     int
 	Shield       int
