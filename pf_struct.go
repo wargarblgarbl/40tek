@@ -9,6 +9,7 @@ type Playfield struct {
 
 type Player struct {
 	ID          string
+	Warlord 		[]Card
 	Hand        []Card
 	PlanetSlots [][]Card
 	HQ          []Card
