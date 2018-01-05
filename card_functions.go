@@ -35,10 +35,10 @@ func (f *Card) Heal(dmg int) {
 	if dmg >= f.Damage {
 		f.Damage = 0
 	} else {
-	f.Damage = f.Damage - dmg
-}
+		f.Damage = f.Damage - dmg
+	}
 }
 
-func (f *Card) Pump(pump int){
+func (f *Card) Pump(pump int) {
 	f.Buff = pump
 }

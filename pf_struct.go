@@ -1,17 +1,16 @@
 package main
 
-import (
-)
+import ()
 
 type Playfield struct {
-	Planets             []Card
-	Player []Player
+	Planets []Card
+	Player  []Player
 }
 
 type Player struct {
-	ID string
-	Hand []Card
+	ID          string
+	Hand        []Card
 	PlanetSlots [][]Card
-	HQ []Card
-	Graveyard []Card
+	HQ          []Card
+	Graveyard   []Card
 }

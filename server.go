@@ -22,13 +22,12 @@ func PlayInit(output chan *Playfield) {
 
 	b := &Playfield{
 		Planets: PlayPlanets(),
-		Player: players,
+		Player:  players,
 	}
 	//Flip the 7 planets
 	for uu := 0; uu <= 4; uu++ {
 		b.Planets[uu].FlipUp()
 	}
-
 
 	output <- b
 	close(output)
