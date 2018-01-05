@@ -1,7 +1,7 @@
 package main
 
 import (
-	"fmt"
+//	"fmt"
 	"math/rand"
 	"time"
 )
@@ -26,7 +26,7 @@ func PlayPlanets() []Card{
   var atlas []int
   aynrand := 99999999
   for uu := 0; uu <= 6; uu++ {
-		fmt.Println(uu)
+		//fmt.Println(uu)
     Random:
     for {
       aynrand = random(0, len(z)-1, time.Now().UnixNano()/int64(len(z)))
@@ -39,6 +39,6 @@ func PlayPlanets() []Card{
       }
     }
   }
-	fmt.Println(sel_planets)
+//	fmt.Println(sel_planets)
   return(sel_planets)
 }

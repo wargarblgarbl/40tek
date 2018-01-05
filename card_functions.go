@@ -1,16 +1,28 @@
 package main
 import ()
 
-func tap(){
-
+func (f *Card) Tap(){
+	f.Tapped = true
 }
 
-func flip(){
-
+func (f *Card) Untap(){
+	f.Tapped = false
 }
 
-func reveal(){
 
+func (f *Card) FlipUp() {
+	f.Faceup = true
 }
 
-func 
+func (f *Card) FlipDown(){
+	f.Faceup = false
+}
+
+
+
+
+func (f *Card) Obfuscate() Card{
+	f = &Card{}
+	return *f
+}
+
