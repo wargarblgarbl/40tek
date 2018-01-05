@@ -17,12 +17,6 @@ func main() {
 
 }
 
-/*
-func handler(w http.ResponseWriter, r *http.Request, mystr string) {
-       println(mystr);
-}
-*/
-
 func PlayInit(output chan *Playfield) {
 	var players []Player
 	p1 := CreatePlayer()
