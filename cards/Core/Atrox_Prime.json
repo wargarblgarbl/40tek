@@ -7,5 +7,6 @@
   "Action": {
     "Action": ["{1d}{all_units}"],
     "Target": ["{hq}||{adj_planets}"]
-  }
+  },
+  "Image": "http://i.imgur.com/hlbyWIb.png"
 }

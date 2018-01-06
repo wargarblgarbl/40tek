@@ -8,7 +8,7 @@ import (
 )
 
 func LoadPlanet() []Card {
-	dir := "./cards/Core/"
+	dir := "../cards/Core/"
 	files, err := ioutil.ReadDir(dir)
 	if err != nil {
 		log.Fatal(err)

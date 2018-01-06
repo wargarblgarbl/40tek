@@ -23,6 +23,7 @@ type Card struct {
 	SignatureNum int
 	Traits       []string
 	Type         []string
+	Image 		 string
 }
 
 type Action struct {

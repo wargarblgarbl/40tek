@@ -9,5 +9,6 @@
       "{select_from}{deck}{3cards}{top}{take}{1}{shuffle}{remainder}{replace}{remainder}"
     ],
     "Target": ["{yourself}"]
-  }
+  },
+    "Image": "https://images-cdn.fantasyflightgames.com/ffg_content/warhammer-40k-conquest/WHK01-card-elouith.png"
 }

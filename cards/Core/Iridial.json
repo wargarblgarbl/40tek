@@ -7,5 +7,6 @@
   "Action": {
     "Action": ["{set}{damage}0"],
     "Target": ["{unit}"]
-  }
+  },
+    "Image": "http://i.imgur.com/hlbyWIb.png"
 }

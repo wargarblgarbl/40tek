@@ -7,5 +7,6 @@
   "Action": {
     "Text":
       "If you control fewer units than your opponent, gain 3[RESOURCE] or draw 3 cards."
-  }
+  },
+    "Image": "http://i.imgur.com/hlbyWIb.png"
 }

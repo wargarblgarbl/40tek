@@ -6,5 +6,6 @@
   "Resource": 2,
   "Action": {
     "Text": "Remove all damage from a target unit."
-  }
+  },
+    "Image": "http://i.imgur.com/hlbyWIb.png"
 }

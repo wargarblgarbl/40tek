@@ -1,4 +1,5 @@
 {
+
   "Name": "Barlus",
   "Type": ["Planet"],
   "Planettype": ["Strongpoint"],
@@ -7,5 +8,7 @@
   "Action": {
     "Action": ["{1c}{discard}{rand}"],
     "Target": ["{opponent}"]
-  }
+  },
+    "Image": "https://images-cdn.fantasyflightgames.com/ffg_content/warhammer-40k-conquest/barlus-planet.png"
+
 }
