@@ -22,15 +22,25 @@ func mainHandler(w http.ResponseWriter, r *http.Request) {
 	}
 	var html []string
 	fmt.Println(html)
-	html = append(html, "<html>")
+	html = append(html, "<html><center>")
 	for _, element := range state.Planets {
 		//html = append(html, "<br />"+"a")
-		if element.Image == "" {
-			element.Image = "https://1d4chan.org/images/thumb/4/49/Angry_Marine_Desktop.jpg/800px-Angry_Marine_Desktop.jpg"
-		}
-		html = append(html, "<img src=\""+element.Image+"\">")
+		html = append(html, "<img onmouseover=\"bigImg(this)\" onmouseout=\"normalImg(this)\" src=\""+element.Image+"\" height=\"144\" width=\"200\">")
 	}
-	exit := strings.Join(html, "")
+	html = append(html, "")
+	exit := strings.Join(html, `<script>
+function bigImg(x) {
+    x.style.height = "318px";
+    x.style.width = "400px";
+}
+
+function normalImg(x) {
+    x.style.height = "144px";
+    x.style.width = "200px";
+}
+</script>
+
+`)
 	w.Write([]byte(exit))
 
 }

@@ -23,7 +23,9 @@ func (f *Card) FlipDown() {
 }
 
 func (f *Card) Obfuscate() Card {
-	f = &Card{}
+	f = &Card{
+		Image: "https://1d4chan.org/images/thumb/4/49/Angry_Marine_Desktop.jpg/800px-Angry_Marine_Desktop.jpg",
+	}
 	return *f
 }
 
